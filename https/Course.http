@@ -1,0 +1,47 @@
+### obtener todos los cursos
+GET http://localhost:8080/api/course
+
+### Crear un nuevo curso 
+POST http://localhost:8080/api/course
+Content-Type: application/json
+
+{
+    "name": "Programacion",
+    "codeCourse":"123",
+    "description": "Este curso esta dise;ado para aprender a programar",
+    "credits": "12",
+    "maxCapacity":"35",
+    "state":"ABIERTO"
+}
+
+### Crear un nuevo curso 
+POST http://localhost:8080/api/course
+Content-Type: application/json
+
+{
+    "name": "Programacion EN PYTHON",
+    "codeCourse":"963",
+    "description": "Este curso es de python para aprender toda la logica",
+    "credits": "10",
+    "maxCapacity":"20",
+    "state":"CANCELADO"
+}
+### Obtener un curso por Id
+GET http://localhost:8080/api/course/2
+
+### Actualizar un curso
+
+PUT http://localhost:8080/api/course/update/1
+Content-Type: application/json
+
+{
+    "name": "Programacion EN PYTHON",
+    "codeCourse":"963",
+    "description": "Este curso es de python para aprender toda la logica",
+    "credits": "10",
+    "maxCapacity":"20",
+    "state":"ABIERTO"
+}
+
+### Eliminar un curso
+DELETE http://localhost:8080/api/course/2
